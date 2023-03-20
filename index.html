@@ -16,17 +16,17 @@
     </h1>
 
     <div class="game-area">
-        <div>
-            <button class=""btn btn--big  btn--green>
-                <i class="fas fa-plus"></i>
+        <div class="controls-area">
+            <button data-type="addition" class=""btn btn--big  btn--green>
+                <i class="fa-solid fa-plus"></i>
             </button>
-            <button class=""btn btn--big  btn--blue>
-                <i class="fas fa-minus"></i>
+            <button data-type="subtract" class=""btn btn--big  btn--blue>
+                <i class="fa-solid fa-minus"></i>
             </button>
-            <button class=""btn btn--big  btn--orange>
+            <button data-type="multiply" class=""btn btn--big  btn--orange>
                 <i class="fas fa-times"></i>
             </button>
-            <button class=""btn btn--big  btn--red>
+            <button data-type="division" class=""btn btn--big  btn--red>
                 <i class="fas fa-divide"></i>
             </button>
         </div>
@@ -35,19 +35,20 @@
             <span id="oprator">x</span>
             <span id="operand2">0</span>
             <span>=</span>
-            <p class="answear-message">Enter Answer</p>
+            <p class="answer-message">Enter Answer</p>
             <input id="answer-box" type="number">
         </div>
-        <button class="btn--gray">Submit Answer</button>
+        <button data-type="submit" class="btn--gray">Submit Answer</button>
     </div>    
     <div class="score-area">
         <p class="scores">Correct Answers
             <span id="score">0</span>
         </p>
-        <p class="scores">Incorect Answears
+        <p class="scores">Incorect Answers
             <span id="incorrect">0</span>
         </p>
     </div>
     <script src="assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/f905a44efa.js" crossorigin="anonymous"></script>
 </body>
 </html>
